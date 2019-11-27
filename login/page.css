@@ -1,0 +1,52 @@
+body{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0;
+    background-image: linear-gradient(to bottom right, #080930, #e91e63);
+    height: 100vh;
+}
+
+#centerpiece{
+    margin: auto;
+    width: 50vw;
+    height: 50vh;
+    overflow: hidden;
+    border: 0;
+    border-radius: 16px;
+    box-shadow: 3px -5px 5px rgba(0,0,0,0.2), 5px 8px 5px rgba(0,0,0,0.3);
+}
+
+header{
+    margin-top: 10vh;
+}
+
+h1{
+    text-align: center;
+    position: relative;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+section, section{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 100%;
+}
+
+form{
+    padding: 0;
+}
+
+h4{
+    text-align: center;
+    font-size: 1.4em;
+}

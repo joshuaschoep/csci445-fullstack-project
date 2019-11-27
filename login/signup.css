@@ -1,0 +1,64 @@
+form#register{
+    color: #080930;
+    height: 100%;
+    background-color: white;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#register fieldset{
+    height: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+}
+
+#register label{
+    display: block;
+}
+
+#register div{
+    display: inline-block;
+    width: 80%;
+    height: 36px;
+    padding: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#register label{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    font-size: 0px;
+    border: 3px solid #080930;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 0;
+}
+
+#register i{
+    display: block;
+    padding: 5px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+#register input[type="email"], #register input[type="password"]{
+    color: #080930;
+    background-color: transparent;
+    width: 70%;
+    height: 30px;
+    border: 3px solid #080930;
+    padding: 0;
+    font-size: 18px;
+    font-weight: normal;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 8px;
+}
