@@ -1,45 +1,21 @@
 form#login{
-    box-sizing: border-box;
     color: white;
-    height: 100%;
     background-color: white;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
-    margin: 0;
-    overflow: hidden;
+    border-top-left-radius: var(--centerpiece-radius);
+    border-bottom-left-radius: var(--centerpiece-radius);
     padding: 8px;
     padding-right: 0px;
 }
 
 #login fieldset{
-    height: 100%;
-    box-sizing: border-box;
-    border: 0;
     margin: 0;
     background-color: #350d3add;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-    padding: 30px;
-    text-align: center;
-}
-
-#login div{
-    display: inline-block;
-    width: 80%;
-    height: 36px;
-    padding: 30px;
-    overflow: hidden;
-    text-align: center;
+    border-top-left-radius: var(--form-radius);
+    border-bottom-left-radius: var(--form-radius);
 }
 
 #login label{
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    font-size: 0px;
     border: 3px solid white;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
     border-right: 0;
 }
 
@@ -52,13 +28,18 @@ form#login{
 
 #login input[type="email"], #login input[type="password"]{
     color: white;
-    background-color: transparent;
-    width: 70%;
-    height: 30px;
     border: 3px solid white;
-    padding: 0;
-    font-weight: normal;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding-left: 8px;
+}
+
+#login input[type="submit"], #login input[type="submit"]:visited{
+    background-color: white;
+    color: #350d3add;
+}
+
+#login input[type="submit"]:hover, #login input[type="submit"]:focus{
+    background-color: #ffffffdd;
+}
+
+#login input[type="submit"]:active{
+    background-color: #ffffffaa;
 }
