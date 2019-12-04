@@ -12,6 +12,6 @@
         </section>
     <article>
     <form id="search">
-        <input type="text" id="text" placeholder="Search users">
+        <input type="text" placeholder="Search users"><input type="submit" value="Search">
     </form>
 </body>
