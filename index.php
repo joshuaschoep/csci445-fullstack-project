@@ -7,8 +7,7 @@
 <body>
     <div class="content">
         <nav>
-            <a href="/login">Sign in</a>
-            <a id="signup" href="/login">Sign up</a>
+            <a id="signup" href="/login">Sign in / Sign up</a>
         </nav>
         <section id="centerpiece">
             <img src="./images/Logo.png" id="logo">

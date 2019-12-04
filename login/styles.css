@@ -78,7 +78,7 @@ h1{
     float: right;
 }
 
-section, section{
+section{
     border: 0;
     margin: 0;
     padding: 0;
@@ -114,6 +114,7 @@ div{
     padding: var(--section-height);
     overflow: hidden;
     text-align: center;
+    padding: 10px;
 }
 
 label{
@@ -125,7 +126,7 @@ label{
     border-bottom-left-radius: 5px;
 }
 
-input[type="email"], input[type="password"], input[type="username"]{
+input[type="email"], input[type="password"], input[type="text"]{
     vertical-align: top;
     background-color: transparent;
     width: 70%;

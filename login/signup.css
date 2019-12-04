@@ -21,7 +21,7 @@ form#register{
     line-height: 20px;
 }
 
-#register input[type="email"], #register input[type="password"], #register input[type="username"]{
+#register input[type="email"], #register input[type="password"], #register input[type="text"]{
     color: #080930;
     border: 3px solid #080930;
 }
