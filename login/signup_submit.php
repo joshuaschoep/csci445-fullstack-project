@@ -10,6 +10,6 @@ echo $username;
 echo $password;
 echo $repeat;
 
-
+echo hash('sha512', $password);
 
 ?>
