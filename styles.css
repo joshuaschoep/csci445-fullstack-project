@@ -4,3 +4,27 @@ body{
     border: 0;
     padding: 0;
 }
+
+article{
+    min-height: 100vh;
+    margin: auto;
+    min-width: 50vw;
+    text-align: center;
+}
+
+#centerpiece{
+    color: #444;
+    height: 40vh;
+    margin-top: 24vh;
+}
+
+#centerpiece #logo{
+    display: block;
+    margin: auto;
+    height: 16vh;
+}
+
+#centerpiece h1{
+    display: block;
+    font-size: 4vh;
+}

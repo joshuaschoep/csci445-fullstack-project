@@ -10,11 +10,13 @@ header table{
     color: white;
     width: 100%;
     text-align: center;
-    margin: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 header td{
     width: 33.3%;
+    position: relative;
 }
 
 header img{
@@ -22,6 +24,13 @@ header img{
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
+}
+
+header p{
+    line-height: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 8px;
 }
 
 nav{
