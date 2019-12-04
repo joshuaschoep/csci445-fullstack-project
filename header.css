@@ -49,12 +49,12 @@ nav li{
     float: left;
 }
 
-nav #signin, nav #search{
+nav #signin, nav #search    {
     float: right;
 }
 
 nav form{
-    padding: 8px 20px;
+    padding: 7px 20px;
     margin: 0;
 }
 
@@ -68,12 +68,21 @@ nav form input[type="text"]{
     width: 15vw;
 }
 
-nav form input[type="submit"]{
+nav form input[type="submit"], nav form input[type="submit"]:visited{
     border-width: 0px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 2px 10px;
     box-sizing: content-box;
+    background-color: rgba(255,255,255,0.6);
+}
+
+nav form input[type="submit"]:hover, nav form input[type="submit"]:focus{
+    background-color: rgba(255,255,255,0.7);
+}
+
+nav form input[type="submit"]:active{
+    background-color: rgba(255,255,255,0.5);
 }
 
 nav a, nav a:visited{
