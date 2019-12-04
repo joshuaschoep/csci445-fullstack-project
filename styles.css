@@ -12,15 +12,35 @@ article{
     text-align: center;
 }
 
-.signin{
+nav{
+    width: 100%;
+    min-height: 1vh;
+    padding: 12px 24px; 
+    box-sizing: border-box;
+}
+
+nav a{
     display: block;
     float: right;
+    padding: 5px 12px;
+    text-decoration: none;
+    color: #444;
+}
+
+nav a:hover{
+    color: #555;
+    text-decoration: underline;
+}
+
+nav #signup{
+    border: 1px solid #999;
+    border-radius: 22px;
 }
 
 #centerpiece{
     color: #444;
     overflow: hidden;
-    padding-top: 24vh;
+    margin-top: 24vh;
     padding-bottom: 1vh;
 }
 

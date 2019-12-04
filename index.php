@@ -5,7 +5,10 @@
     <link rel="stylesheet" href="./styles.css" type="text/css">
 </head>
 <body>
-    <a class="signin" href="/login">Sign in</a>
+    <nav>
+        <a href="/login">Sign in</a>
+        <a id="signup" href="/login">Sign up</a>
+    </nav>
     <article>
         <section id="centerpiece">
             <img src="./images/Logo.png" id="logo">
