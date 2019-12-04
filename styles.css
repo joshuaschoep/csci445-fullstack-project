@@ -12,10 +12,15 @@ article{
     text-align: center;
 }
 
+.signin{
+    display: block;
+    float: right;
+}
+
 #centerpiece{
     color: #444;
     overflow: hidden;
-    margin-top: 24vh;
+    padding-top: 24vh;
     padding-bottom: 1vh;
 }
 
@@ -39,7 +44,7 @@ article{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-width: 3px;
-    /* border-right-width: 0; */
+    border-right-width: 0;
     border-top-color: #350d3a;
     border-left-color: #350d3a;
     border-bottom-color: #999;
@@ -52,7 +57,7 @@ article{
     min-width: 10vw;
     height: 24px;
     padding: 4px 0px;
-    background-color: #350d3add;
+    background-color: #350d3a;
     color: white;
 
     border-top-right-radius: 20px;
@@ -61,7 +66,7 @@ article{
 }
 
 #search input[type="submit"]:hover, #search input[type="submit"]:focus{
-    background-color: #350d3aaa;
+    background-color: #350d3abb;
 }
 
 #search input[type="submit"]:active{
