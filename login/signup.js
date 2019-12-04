@@ -7,7 +7,7 @@ function checkPasswordsMatch() {
     p2 = document.getElementById("pw-repeat").value
 
     if (p1 !== p2) {
-        alert("passwords do not match. please try again");
+        alert("passwords do not match. please make sure you retype the password exactly");
         document.getElementById("register").reset();
         return false;
     }
