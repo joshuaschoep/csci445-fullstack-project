@@ -5,7 +5,8 @@ body{
     padding: 0;
 }
 
-article{
+.content{
+    overflow: hidden;
     min-height: 100vh;
     margin: auto;
     min-width: 50vw;
