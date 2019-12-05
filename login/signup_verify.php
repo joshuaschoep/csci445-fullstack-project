@@ -1,3 +1,12 @@
+<!doctype html>
+<head>
+    <title>Account Verified for Resum&eacute;</title>
+    <link rel="icon" href="../images/Logo.png">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/2a4e989807.js" crossorigin="anonymous"></script>
+</head>
+
 <?php
 $servername = 'localhost';
 $username = 'tlucas';
@@ -38,3 +47,20 @@ if(isset($_GET["e"]) && !empty($_GET['e']) AND isset($_GET["h"]) && !empty($_GET
 }
 
 ?>
+
+<body>
+    <header>
+        <h1>Account Verified for Resum&eacute;</h1>
+    </header>
+    <article id="centerpiece">
+        <section class="left">
+            <h2>Account Active</h2>
+            <div>
+                <p>
+                    Thank you for activating your Resum&eacute; account! 
+                    You can now login at the <a id="signup" href="./login">Resum&eacute; home page</a>.
+                </p>
+            </div>   
+        </section>
+    </article>
+</body>

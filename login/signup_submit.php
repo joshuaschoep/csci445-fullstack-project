@@ -1,4 +1,13 @@
 <!-- email, username, password, repeat -->
+<!doctype html>
+<head>
+    <title>Register with Resum&eacute;</title>
+    <link rel="icon" href="../images/Logo.png">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/2a4e989807.js" crossorigin="anonymous"></script>
+</head>
+
 <?php 
 
 $domain = 'luna.mines.edu';
@@ -39,10 +48,10 @@ if(isset($_POST["username"]) && !empty($_POST["username"]) AND
     $h = $hash;
 
     // just for debugging
-    echo $u . "<br>";
-    echo $e . "<br>";
-    echo $p . "<br>";
-    echo $h . "<br>";
+    // echo $u . "<br>";
+    // echo $e . "<br>";
+    // echo $p . "<br>";
+    // echo $h . "<br>";
 
     // no need to verify if user already exists as this is handled with ajax on submit
     // insert into db
@@ -84,3 +93,24 @@ if(isset($_POST["username"]) && !empty($_POST["username"]) AND
 # at this point signup_submit displays message that email has been sent to user email
 # and the user must verify the email before the account is active. 
 ?>
+
+
+
+<body>
+    <header>
+        <h1>Register with Resum&eacute;</h1>
+    </header>
+    <article id="centerpiece">
+        <section class="left">
+            <h2>Welcome!</h2>
+            <div>
+                <p>
+                    Thank you <?php echo $username; ?> for registering with Resum&eacute;. 
+                    We are very excited for you to join, but your account is not active yet. 
+                    An email has been sent to <?php echo $email; ?> with instructions on how to 
+                    proceed. Once you have completed the following steps you will be able to login.
+                </p>
+            </div>   
+        </section>
+    </article>
+</body>
