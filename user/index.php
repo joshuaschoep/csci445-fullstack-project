@@ -54,6 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     <title>Resum&eacute; for <?php echo $_GET['name']; ?> on Resum&eacute;</title>
     <link rel="stylesheet" href="users.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/2a4e989807.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <?php include '../generic-header.php'?>
