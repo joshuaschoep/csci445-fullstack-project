@@ -145,15 +145,6 @@ input[type="submit"]{
     padding: 8px 12px;
 }
 
-div.text-block {
-    height: 100px;
-    padding: 20px;
-}
-
-div.text-block p {
-
-}
-
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }

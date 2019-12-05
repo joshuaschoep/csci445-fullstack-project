@@ -9,9 +9,9 @@
 
 <?php
 $servername = 'localhost';
-$username = 'tlucas';
-$password = 'KIOKYMKU';
-$dbname = 'f19_tlucas';
+$username = 'root';
+$password = '';
+$dbname = 'f19_ntodtenhagen';
 // echo 'get email: ' . $_GET['e'] . "<br>";
 // echo 'get hash: ' . $_GET["h"] . "<br>"; 
 if(isset($_GET["e"]) && !empty($_GET['e']) AND isset($_GET["h"]) && !empty($_GET['h'])) {

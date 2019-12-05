@@ -4,6 +4,7 @@
     <title>Register with Resum&eacute;</title>
     <link rel="icon" href="../images/Logo.png">
     <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link rel="stylesheet" href="./signup-submit.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/2a4e989807.js" crossorigin="anonymous"></script>
 </head>
@@ -13,9 +14,9 @@
 $domain = 'luna.mines.edu';
 $domain_path = 'fall_2019/tlucas';
 $servername = 'localhost';
-$username = 'tlucas';
-$password = 'KIOKYMKU';
-$dbname = 'f19_tlucas';
+$username = 'root';
+$password = '';
+$dbname = 'csci_fullstack_project';
 
 // make sure username email and password are not null and not empty
 if(isset($_POST["username"]) && !empty($_POST["username"]) AND
@@ -40,6 +41,9 @@ if(isset($_POST["username"]) && !empty($_POST["username"]) AND
 
     // prepared statement to insert info into db
     $insert_user = $conn->prepare("INSERT INTO USERS (username, email, password, hash) VALUES (?, ?, ?, ?)");
+    if(!$insert_user){
+        die($conn->error);
+    }
     $insert_user->bind_param("ssss", $u, $e, $p, $h);
     
     $u = $username;
@@ -56,7 +60,6 @@ if(isset($_POST["username"]) && !empty($_POST["username"]) AND
     // no need to verify if user already exists as this is handled with ajax on submit
     // insert into db
     $insert_user->execute();
-    $uid = $conn->$insert_id;
     // echo "inserted user... " . $uid . "<br>";
 
     // close db connection
@@ -101,16 +104,12 @@ if(isset($_POST["username"]) && !empty($_POST["username"]) AND
         <h1>Register with Resum&eacute;</h1>
     </header>
     <article id="centerpiece">
-        <section class="left">
-            <h2>Welcome!</h2>
-            <div class="text-block">
-            
-                Thank you <?php echo $username; ?> for registering with Resum&eacute;. 
-                We are very excited for you to join, but your account is not active yet. 
-                An email has been sent to <?php echo $email; ?> with instructions on how to 
-                proceed. Once you have completed the following steps you will be able to login.
-            
-            </div>   
-        </section>
+        <h2>Welcome!</h2>
+        <p>
+            Thank you <?php echo $username; ?> for registering with Resum&eacute;. 
+            We are very excited for you to join, but your account is not active yet. 
+            An email has been sent to <?php echo $email; ?> with instructions on how to 
+            proceed. Once you have completed the following steps you will be able to login.
+        </p>   
     </article>
 </body>
