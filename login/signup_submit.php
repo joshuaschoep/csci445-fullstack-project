@@ -2,6 +2,7 @@
 <?php 
 
 $domain = 'luna.mines.edu';
+$domain_path = 'fall_2019/tlucas';
 $servername = 'localhost';
 $username = 'tlucas';
 $password = 'KIOKYMKU';
@@ -68,7 +69,7 @@ if(isset($_POST["username"]) && !empty($_POST["username"]) AND
     Email: ' . $email . '
 
     Please click the following link to activate your account:
-    http://' . $domain . '/signup_verify.php?e=' . $email . '$h=' . $hash . ' 
+    http://' . $domain . '/' . '/signup_verify.php?e=' . $email . '$h=' . $hash . ' 
     
     ';
 
