@@ -19,6 +19,6 @@ function searchUsers(input) {
             document.getElementById("searchResults").style.border = "2px solid purple";
         }
     };
-    xhttp.open("GET", "search.php?q=" + input, true);
+    xhttp.open("GET", "search/search.php?q=" + input, true);
     xhttp.send();
 }

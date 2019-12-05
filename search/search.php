@@ -1,4 +1,9 @@
 <?php
+session_start();
+
+if(!$_SESSION['logged_in']) {
+    die("Please log in first!");
+}
 
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');

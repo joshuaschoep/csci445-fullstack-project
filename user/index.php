@@ -2,14 +2,14 @@
 session_start();
 
 if(!$_SESSION['logged_in']) {
-    echo "<script>window.location='login/index.php';</script>";
+    echo "<script>window.location='../login/index.php';</script>";
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     define('DB_SERVER', 'localhost');
-    define('DB_USERNAME', 'ntodtenhagen');
-    define('DB_PASSWORD', 'CCAOSESG');
-    define('DB_NAME', 'f19_ntodtenhagen');
+    define('DB_USERNAME', 'root');
+    define('DB_PASSWORD', '');
+    define('DB_NAME', 'csci445_fullstack_project');
 
     $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 

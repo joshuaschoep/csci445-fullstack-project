@@ -1,9 +1,6 @@
 <?php
 session_start();
 
-if(!$_SESSION['logged_in']) {
-    echo "<script>window.location='login/index.php';</script>";
-}
 ?>
 
 <link rel="stylesheet" href="/header.css" type="text/css">
