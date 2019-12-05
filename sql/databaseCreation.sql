@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS f19_ntodtenhagen;
+-- CREATE DATABASE IF NOT EXISTS csci445_fullstack_project;
 
-USE f19_ntodtenhagen;
+USE f19_tlucas;
 
 CREATE TABLE IF NOT EXISTS USERS (
     user_id INT NOT NULL AUTO_INCREMENT,
