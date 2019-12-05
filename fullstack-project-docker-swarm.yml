@@ -34,4 +34,4 @@ networks:
     # attaching to mysql instance
     # docker run -it --network fullstack_fullstack-net --rm mysql mysql -hdb -uroot -pfullstack
 
-    docker exec -i <container_name> -c 'exec mysql -uroot -pfullstack' < ./sql/databaseCreation.sql
+    # docker exec -i <container_name> sh -c 'exec mysql -uroot -pfullstack' < ./sql/databaseCreation.sql
