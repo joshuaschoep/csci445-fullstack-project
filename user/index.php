@@ -1,17 +1,18 @@
-<?php
-session_start();
+ <?php
+ session_start();
 
-if (!$_SESSION['logged_in']) {
-    echo "<script>window.location='../login/index.php';</script>";
-}
+ if(!$_SESSION['logged_in']) {
+     echo "<script>window.location='../login/index.php';</script>";
+ }
 
-if ($_SERVER['REQUEST_METHOD'] === 'GET') {
-    define('DB_SERVER', 'localhost');
-    define('DB_USERNAME', 'ntodtenhagen');
-    define('DB_PASSWORD', 'CCAOSESG');
-    define('DB_NAME', 'f19_ntodtenhagen');
+ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+     define('DB_SERVER', 'localhost');
+     define('DB_USERNAME', 'ntodtenhagen');
+     define('DB_PASSWORD', 'CCAOSESG');
+     define('DB_NAME', 'f19_ntodtenhagen');
 
-    $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+     $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
 
     if (!$connection) {
         die("DB Connection failed " . mysqli_connect_error());
@@ -48,13 +49,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 ";
                         } else {
                             $cards .= "<link rel=\"stylesheet\" href=\"/user/card.css\" type=\"text/css\">
+<script src=\"https://kit.fontawesome.com/2a4e989807.js\" crossorigin=\"anonymous\"></script>
 <div class=\"card-wrapper\">
-    <a href=\"" . $row[2] . "\">
+    <a href=\"$row[2]\">
     <article>
-        <img class=\"label\" src=\"\" height=\"180px\" width=\"480px\">
+        <img class=\"label\" src=\"/images/banner3.png\" height=\"240px\" width=\"360px\">
         <section class=\"card-body\">
-            <h1>" . $row[4] . "</h1>
-            <p>" . $row[3] . "</p>        
+            <h1>$row[4]</h1>
+            <p>$row[3]</p>
         </section>
     </article>
     </a>
@@ -76,9 +78,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     <script src="https://kit.fontawesome.com/2a4e989807.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<?php include '../generic-header.php' ?>
-<section class="content">
-    <?php echo $cards; ?>
-    <a id="add-card" href="add-card"><i class="fas fa-plus-circle"></i></a>
-</section>
+    <?php include '../generic-header.php'?>
+    <section class="content">
+        <?php echo $cards; ?>
+        <a id="add-card" href="../add-card"><i class="fas fa-plus-circle"></i></a>
+    </section>
 </body>
