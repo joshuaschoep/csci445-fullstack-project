@@ -1,11 +1,11 @@
 <!-- email, username, password, repeat -->
 <?php 
 
-$domain = 'origin:421';
-$servername = 'db';
+$domain = 'luna.mines.edu';
+$servername = 'localhost';
 $username = 'root';
 $password = 'fullstack';
-$dbname = 'csci445_fullstack_project';
+$dbname = 'f19_tlucas';
 
 // make sure username email and password are not null and not empty
 if(isset($_POST["username"]) && !empty($_POST["username"]) AND

@@ -1,4 +1,8 @@
-<?php 
+<?php
+$servername = 'localhost';
+$username = 'root';
+$password = 'fullstack';
+$dbname = 'f19_tlucas'; 
 if(isset($_GET["e"]) && !empty($_GET['e']) AND isset($_GET["h"]) && !empty($_GET['h'])) {
     
     $conn = new mysqli($servername, $username, $password, $dbname);
