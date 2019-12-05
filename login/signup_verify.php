@@ -55,11 +55,9 @@ if(isset($_GET["e"]) && !empty($_GET['e']) AND isset($_GET["h"]) && !empty($_GET
     <article id="centerpiece">
         <section class="left">
             <h2>Account Active</h2>
-            <div>
-                <p>
-                    Thank you for activating your Resum&eacute; account! 
-                    You can now login at the <a id="signup" href="../">Resum&eacute; home page</a>.
-                </p>
+            <div class="text-block">
+                Thank you for activating your Resum&eacute; account! 
+                You can now login at the <a id="signup" href="../">Resum&eacute; home page</a>.
             </div>   
         </section>
     </article>

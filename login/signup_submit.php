@@ -103,13 +103,13 @@ if(isset($_POST["username"]) && !empty($_POST["username"]) AND
     <article id="centerpiece">
         <section class="left">
             <h2>Welcome!</h2>
-            <div>
-                <p>
-                    Thank you <?php echo $username; ?> for registering with Resum&eacute;. 
-                    We are very excited for you to join, but your account is not active yet. 
-                    An email has been sent to <?php echo $email; ?> with instructions on how to 
-                    proceed. Once you have completed the following steps you will be able to login.
-                </p>
+            <div class="text-block">
+            
+                Thank you <?php echo $username; ?> for registering with Resum&eacute;. 
+                We are very excited for you to join, but your account is not active yet. 
+                An email has been sent to <?php echo $email; ?> with instructions on how to 
+                proceed. Once you have completed the following steps you will be able to login.
+            
             </div>   
         </section>
     </article>
