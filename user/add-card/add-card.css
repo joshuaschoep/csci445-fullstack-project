@@ -4,10 +4,29 @@ body{
     margin: 0;
 }
 
-form{
+#new-card-form{
     padding: 50px;
+    box-sizing: border-box;
+    max-width: 50vw;
 }
 
-form input{
+#new-card-form label{
+    font-size: 1.4em;
+}
+
+#new-card-form input, form textarea{
     display: block;
+    min-width: 200px;
+    width: 40vw;
+    margin: 20px;
+}
+
+#new-card-form input[type="submit"]{
+    padding: 8px 12px;
+    display: inline-block;
+    width: auto;
+    min-width: 0;
+    border: 0;
+    background-color: #350d3add;
+    color: white;
 }

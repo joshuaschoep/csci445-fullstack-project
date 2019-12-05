@@ -7,11 +7,11 @@
 <body>
     <?php include '../../generic-header.php'?>
     <section class="content">
-        <form>
+        <form id="new-card-form">
             <label for="title">Title</label>
             <input type="text" placeholder="Title me!">
             <label for="description">Description</label>
-            <input type="textarea" placeholder="Describe the project">
+            <textarea placeholder="Describe the project"></textarea>
             <label for="link">Link</label>
             <input type="url" placeholder="Link to your project's website">
             <input type="submit" value="Add this card">
