@@ -1,7 +1,7 @@
 <?php
 $servername = 'localhost';
-$username = 'root';
-$password = 'fullstack';
+$username = 'tlucas';
+$password = 'KIOKYMKU';
 $dbname = 'f19_tlucas'; 
 if(isset($_GET["e"]) && !empty($_GET['e']) AND isset($_GET["h"]) && !empty($_GET['h'])) {
     
