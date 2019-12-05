@@ -1,0 +1,43 @@
+.card-wrapper{
+    margin: 50px;
+    display: block;
+    float: left;
+}
+
+.card-wrapper a{
+    color: #000;
+    text-decoration: none;
+}
+
+.card-wrapper article{
+    display: block;
+    height: 480px;
+    box-shadow: 8px 5px 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+img.label{
+    object-fit: cover;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+section.card-body{
+    display: block;
+    padding: 8px;
+    background-color: #dcdcdc;
+    height: 240px;
+}
+
+.card-wrapper h1{
+    font-size: 32px;
+    margin: 8px;
+}
+
+.card-wrapper p{
+    height: 78px;
+    line-height: 1.5em;
+    font-size: 18px;
+    text-overflow: ellipsis;
+}

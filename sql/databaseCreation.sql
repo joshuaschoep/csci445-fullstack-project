@@ -27,5 +27,6 @@ CREATE TABLE IF NOT EXISTS WEBPAGEDATA (
     link_to VARCHAR(255),
     description VARCHAR(255),
     title VARCHAR(255),
-    PRIMARY KEY(card_id)
+    PRIMARY KEY(card_id),
+    FOREIGN KEY(user_id) REFERENCES USERS(user_id)
 );

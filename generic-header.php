@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <link rel="stylesheet" href="/header.css" type="text/css">
 <header>
     <table>
