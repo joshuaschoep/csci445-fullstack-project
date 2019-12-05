@@ -10,7 +10,7 @@
         <form>
             <label for="title">Title</label>
             <input type="text" placeholder="Title me!">
-            <label for="description">Description></label>
+            <label for="description">Description</label>
             <input type="textarea" placeholder="Describe the project">
             <label for="link">Link</label>
             <input type="url" placeholder="Link to your project's website">
