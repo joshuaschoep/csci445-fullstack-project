@@ -1,6 +1,8 @@
 <?php
 session_start();
 $_SESSION['logged_in'] = true;
+$_SESSION['uid'] = 1;
+
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +23,7 @@ $_SESSION['logged_in'] = true;
             <h1>Welcome to Resum&eacute;</h1>
             <form id="search">
                 <input type="text" placeholder="Search users" onkeyup="searchUsers(this.value)"><input type="submit" value="Search">
+                <span id="searchResults"></span>
             </form>
         </section>
     </div>

@@ -10,13 +10,7 @@
 </head>
 
 <?php 
-
-$domain = 'luna.mines.edu';
-$domain_path = 'fall_2019/tlucas';
-$servername = 'localhost';
-$username = 'root';
-$password = '';
-$dbname = 'csci_fullstack_project';
+require '../secrets.php';
 
 // make sure username email and password are not null and not empty
 if(isset($_POST["username"]) && !empty($_POST["username"]) AND
