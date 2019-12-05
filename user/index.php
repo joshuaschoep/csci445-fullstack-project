@@ -16,9 +16,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if (!$connection) {
         die("DB Connection failed " . mysqli_connect_error());
     }
-    $search_param = $_GET['username'];
-    $QUERY = $connection->prepare("SELECT * FROM USERS WHERE username LIKE ?");
-    $QUERY->bind_param("s", $search_param);
+    $search_param = $_GET['uid'];
+    $QUERY = $connection->prepare("SELECT * FROM USERS WHERE user_id LIKE ?");
+    $QUERY->bind_param("i", $search_param);
     if($QUERY->execute) {
         $cards = "";
         $results = $QUERY->get_result();
@@ -29,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                 $results2 = $CARD_QUERY->get_result();
                 if($results2->num_rows > 0) {
                     while($row = $results2->fetch_row()) {
+                        if($_SESSION['uid'] === $row[1])
                         $cards .= "<link rel=\"stylesheet\" href=\"/user/card.css\" type=\"text/css\">
 <div class=\"card-wrapper\">
     <a href=\"" . $row[2] . "\">
