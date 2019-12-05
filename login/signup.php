@@ -13,7 +13,7 @@
         </div>
         <div class="username">
             <label for="username"><i class="fas fa-user"></i></label>
-            <input id = "uname" type="text" 
+            <input id = "uname" type="text" onchange="checkUserName()"
                 pattern="[a-zA-Z0-9]+" title="Only numbers and letters accepted for usernames"
                 name="username" placeholder="Username">
         </div>

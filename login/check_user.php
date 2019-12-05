@@ -12,17 +12,17 @@ if (isset($_GET["uname"]) && !empty($_GET["uname"])) {
     
     $check_uname = mysqli_real_escape_string($conn, $_GET["uname"]);
 
-    $uname_query = $conn->prepare("SELECT EXISTS(SELECT * FROM USERS WHERE username=?)");
+    $uname_query = $conn->prepare("SELECT * FROM USERS WHERE username=?");
     $uname_query->bind_param("s", $u);
 
-    $u = $uname;
+    $u = $check_uname;
 
     $uname_query->execute();
     $result = $uname_query->get_result();
 
     $conn->close();
 
-    if ($result == true) {
+    if ($result->num_rows > 0) {
         echo "repeat";
     }
 
