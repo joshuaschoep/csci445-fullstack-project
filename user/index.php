@@ -28,7 +28,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             if($CARD_QUERY->execute) {
                 $results2 = $CARD_QUERY->get_result();
                 if($results2->num_rows > 0) {
-
+                    while($row = $results2->fetch_row()) {
+                        $cards .= "<link rel=\"stylesheet\" href=\"/user/card.css\" type=\"text/css\">
+<div class=\"card-wrapper\">
+    <a href=\"" . $row[2] . "\">
+    <article>
+        <img class=\"label\" src=\"\" height=\"180px\" width=\"480px\">
+        <section class=\"card-body\">
+            <h1>" . $row[4] . "</h1>
+            <p>" . $row[3] . "</p>        
+        </section>
+    </article>
+    </a>
+</div>
+";
+                    }
                 }
             }
         }
@@ -44,7 +58,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 <body>
     <?php include '../generic-header.php'?>
     <section class="content">
-        <?php include './card.php'?>
-        <?php include './card.php'?>
+        <?php echo $cards; ?>
     </section>
 </body>
