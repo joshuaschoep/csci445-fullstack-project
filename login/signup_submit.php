@@ -21,7 +21,7 @@ $dbname = 'f19_tlucas';
 if(isset($_POST["username"]) && !empty($_POST["username"]) AND
    isset($_POST["email"]) && !empty($_POST["email"]) AND
    isset($_POST["password"]) && !empty($_POST["password"])) {
-    echo "made it into if <br>";
+    // echo "made it into if <br>";
     // connect to the mysql instance and db
     $conn = new mysqli($servername, $username, $password, $dbname);
     // check the connection
@@ -57,7 +57,7 @@ if(isset($_POST["username"]) && !empty($_POST["username"]) AND
     // insert into db
     $insert_user->execute();
     $uid = $conn->$insert_id;
-    echo "inserted user... " . $uid . "<br>";
+    // echo "inserted user... " . $uid . "<br>";
 
     // close db connection
     $conn->close();
@@ -85,7 +85,7 @@ if(isset($_POST["username"]) && !empty($_POST["username"]) AND
     $message = wordwrap($message, 70, "\r\n");
 
     mail($to, $subject, $message, $headers);
-    echo "sent email to: " . $email_to . "<br>";
+    // echo "sent email to: " . $email_to . "<br>";
    }
 # when user first submits, should use ajax to query if username/email etc already exists
 # if user already exists, indicate and reset form otherwise signup_submit 
