@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="signup.css" type="text/css">
 <script src="./signup.js"></script>
+<script src="./sha512.js"></script>
 <form id="register" action="./signup_submit.php" method="post" onsubmit="return checkPasswordsMatch()">
     <fieldset>
         <h4>Register</h4>
