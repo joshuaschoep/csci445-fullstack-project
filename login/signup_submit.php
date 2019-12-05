@@ -3,8 +3,8 @@
 
 $domain = 'luna.mines.edu';
 $servername = 'localhost';
-$username = 'root';
-$password = 'fullstack';
+$username = 'tlucas';
+$password = 'KIOKYMKU';
 $dbname = 'f19_tlucas';
 
 // make sure username email and password are not null and not empty
