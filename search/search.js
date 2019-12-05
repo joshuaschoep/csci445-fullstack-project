@@ -16,6 +16,7 @@ function searchUsers(input) {
     xhttp.onreadystatechange = function () {
         if(this.readystatechange === 4 && this.status === 200) {
             document.getElementById("searchResults").innerHTML = this.responseText;
+            console.log(this.responseText);
             document.getElementById("searchResults").style.border = "2px solid purple";
         }
     };
