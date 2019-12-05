@@ -1,5 +1,5 @@
 <head>
-    <title>{{user}} on Resum&eacute;</title>
+    <title>Resum&eacute; for <?php echo $_GET['name']; ?> on Resum&eacute;</title>
     <link rel="stylesheet" href="users.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>

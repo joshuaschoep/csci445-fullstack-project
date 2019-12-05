@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <head>
     <title>Sign in to Resum&eacute;</title>
