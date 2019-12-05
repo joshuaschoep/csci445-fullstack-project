@@ -1,4 +1,4 @@
-<?php
+ <?php
 session_start();
 
 if(!$_SESSION['logged_in']) {
@@ -7,9 +7,9 @@ if(!$_SESSION['logged_in']) {
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     define('DB_SERVER', 'localhost');
-    define('DB_USERNAME', 'root');
-    define('DB_PASSWORD', '');
-    define('DB_NAME', 'csci445_fullstack_project');
+    define('DB_USERNAME', 'ntodtenhagen');
+    define('DB_PASSWORD', 'CCAOSESG');
+    define('DB_NAME', 'f19_ntodtenhagen');
 
     $connection = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 ?>
 
 <head>
-    <title>Resum&eacute; for <?php echo $_GET['name']; ?> on Resum&eacute;</title>
+    <title><?php echo $_GET['name']; ?> on Resum&eacute;</title>
     <link rel="stylesheet" href="users.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/2a4e989807.js" crossorigin="anonymous"></script>
@@ -60,5 +60,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     <?php include '../generic-header.php'?>
     <section class="content">
         <?php echo $cards; ?>
+        <a id="add-card" href="add-card"><i class="fas fa-plus-circle"></i></a>
     </section>
 </body>
