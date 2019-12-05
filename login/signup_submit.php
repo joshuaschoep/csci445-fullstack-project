@@ -69,7 +69,7 @@ if(isset($_POST["username"]) && !empty($_POST["username"]) AND
     Email: ' . $email . '
 
     Please click the following link to activate your account:
-    http://' . $domain . '/' . $domain_path . '/login/signup_verify.php?e=' . $email . '$h=' . $hash . ' 
+    http://' . $domain . '/' . $domain_path . '/login/signup_verify.php?e=' . $email . '&h=' . $hash . ' 
     
     ';
 
