@@ -2,9 +2,11 @@
 $servername = 'localhost';
 $username = 'tlucas';
 $password = 'KIOKYMKU';
-$dbname = 'f19_tlucas'; 
+$dbname = 'f19_tlucas';
+echo 'get email: ' . $_GET['e'] . "<br>";
+echo 'get hash: ' . $_GET["h"] . "<br>"; 
 if(isset($_GET["e"]) && !empty($_GET['e']) AND isset($_GET["h"]) && !empty($_GET['h'])) {
-    
+    echo 'inside if'; 
     $conn = new mysqli($servername, $username, $password, $dbname);
     // check the connection
     if ($conn->connect_error) {
