@@ -16,6 +16,7 @@ function checkPasswordsMatch() {
         // hash the password on submit if it is acceptable
         // sha512 probably overkill but whatever
         document.getElementById("pw").value = hex_sha512(p1);
+        document.getElementById("pw-repeat").value = hex_sha512(p2);
         return true;
     }
 }
