@@ -26,7 +26,7 @@ form#login{
     line-height: 20px;
 }
 
-#login input[type="email"], #login input[type="password"]{
+#login input[type="text"], #login input[type="password"]{
     color: white;
     border: 3px solid white;
 }

@@ -1,6 +1,6 @@
 -- CREATE DATABASE IF NOT EXISTS csci445_fullstack_project;
 
-USE f19_tlucas;
+USE f19_ntodtenhagen;
 
 CREATE TABLE IF NOT EXISTS USERS (
     user_id INT NOT NULL AUTO_INCREMENT,
@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS USERS (
     username VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL, 
     password VARCHAR(255) NOT NULL,
-    hash VARCHAR(32) NOT NULL,
+    hash VARCHAR(255) NOT NULL,
     active INT(1) NOT NULL DEFAULT '0',
     PRIMARY KEY(user_id) 
 );
