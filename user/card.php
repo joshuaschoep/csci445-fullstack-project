@@ -2,7 +2,7 @@
 <div class="card-wrapper">
     <a href="">
     <article>
-        <img class="label" src="" height="180px" width="480px">
+        <img class="label" src="/images/banner3.png" height="240px" width="360px">
         <section class="card-body">
             <h1>Title</h1>
             <p>Describe me!</p>        
