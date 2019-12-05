@@ -5,7 +5,7 @@ USE csci445_fullstack_project;
 CREATE TABLE IF NOT EXISTS USERS (
     user_id INT NOT NULL AUTO_INCREMENT,
     public_name VARCHAR(255),
-    username VARCHAR(255),
+    username VARCHAR(255) UNIQUE,
     email VARCHAR(255), 
     password VARCHAR(255),
     PRIMARY KEY(user_id) 
@@ -25,5 +25,6 @@ CREATE TABLE IF NOT EXISTS WEBPAGEDATA (
     link_to VARCHAR(255),
     description VARCHAR(255),
     title VARCHAR(255),
-    PRIMARY KEY(card_id)
+    PRIMARY KEY(card_id),
+    FOREIGN KEY(user_id) REFERENCES USERS(user_id)
 );
