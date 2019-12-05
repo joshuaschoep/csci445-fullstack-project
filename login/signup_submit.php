@@ -82,7 +82,7 @@ if(isset($_POST["username"]) && !empty($_POST["username"]) AND
     
     ';
 
-    $message = wordwrap($message, 70, "\r\n");
+    $message = wordwrap($message, 100, "\r\n");
 
     mail($to, $subject, $message, $headers);
     // echo "sent email to: " . $email_to . "<br>";
